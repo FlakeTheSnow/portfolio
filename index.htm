@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Učitelské portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Three.js CDN -->
+  <script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-100 antialiased">
+
+  <!-- DONUT SECTION -->
+  <section class="relative h-screen overflow-hidden">
+    <canvas id="donut-canvas" class="absolute inset-0"></canvas>
+
+    <div class="relative z-10 h-full flex items-center">
+      <div class="max-w-5xl mx-auto px-6">
+        <h1 class="text-5xl md:text-6xl font-bold tracking-tight text-center">
+            Igor Vujovič
+        </h1>
+        <p class="mt-6 text-xl text-neutral-1000 max-w-xl text-center">
+            Učitel IT · Hacker · Stopař
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+
+  <!-- THEME TOGGLE -->
+    <button id="theme-toggle" aria-label="Přepnout motiv" 
+    class="fixed top-6 right-6 z-50 flex items-center gap-2 rounded-full bg-neutral-800 px-4 py-2 shadow-lg ">
+    <span id="icon-sun" class="text-yellow-400">🌙</span>
+    <div class="relative w-10 h-5 bg-neut🌙ral-600 rounded-full bg-neutral-600">
+    <div id="toggle-dot" class="absolute top-0.5 left-0.5 w-4 h-4 bg-white rounded-full transition-transform"></div>
+    </div>
+    <span id="icon-moon" class="text-blue-300">💡</span>
+    </button>
+
+  <main class="max-w-5xl mx-auto px-6 py-24 space-y-24">
+
+    <section>
+      <h2 class="text-3xl font-semibold">O mně</h2>
+      <p class="mt-4 text-neutral-400 max-w-2xl">
+        Učím informatiku. Zaměřuji se na praktické dovednosti, weby,
+        GNU/Linux a algoritmizaci.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-3xl font-semibold">Co učím</h2>
+      <ul class="mt-4 space-y-2 text-neutral-400">
+        <li>Základy programování</li>
+        <li>Weby</li>
+        <li>Sítě</li>
+        <li>Linux</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-3xl font-semibold">Kontakt</h2>
+      <p class="mt-4 text-neutral-400">
+        vujovic@gjk.cz
+      </p>
+    </section>
+
+  </main>
+  <script src="theme-toggle.js"></script>
+  <script src="donut.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
