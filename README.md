@@ -1,14 +1,17 @@
+# Static Single Page portolio s Tailwind a Three.js
+
 ## 📁 Struktura
 
 ```
 /portfolio
  ├─ index.html
- ├─ main.js
- └─ donut.js
+ └─ /resources 
+    ├─ particles*.js
+    ├─ donut.js
+    └─ /images
 ```
 
 ### TODO:
 
-* reakce objektu na **pohyb myši**
 * scroll‑based animace
 * druhá stránka `materialy.html`

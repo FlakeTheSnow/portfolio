@@ -30,3 +30,4 @@ function setDark() {
   track.classList.add('bg-neutral-600'); // tmavá cesta
   localStorage.setItem('theme','dark');
 }
+

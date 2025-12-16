@@ -10,6 +10,15 @@ const camera = new THREE.PerspectiveCamera(
 );
 camera.position.z = 4;
 
+let mouseX = 0;
+let mouseY = 0;
+
+window.addEventListener('mousemove', (e) => {
+  mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+  mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+});
+
+
 const renderer = new THREE.WebGLRenderer({
   canvas,
   antialias: true,
@@ -19,7 +28,7 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-// Objekt – drátěný torus (profesionálnější než kostka)
+// Objekt
 const geometry = new THREE.TorusGeometry(1, 0.35, 24, 64);
 const material = new THREE.MeshStandardMaterial({
   color: 0x38bdf8,
@@ -40,6 +49,12 @@ scene.add(pointLight);
 
 // Animace
 function animate() {
+  torus.rotation.x += 0.002;
+  torus.rotation.y += 0.003;
+
+  torus.rotation.y += mouseX * 0.01;
+  torus.rotation.x += mouseY * 0.01;
+ 
   requestAnimationFrame(animate);
 
   torus.rotation.x += 0.002;
