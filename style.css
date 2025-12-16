@@ -1,0 +1,42 @@
+.circle-img:hover {
+  transform: scale(1.15) translateX(120px);
+  z-index: 10;
+}
+
+.scatter-img {
+  width: 240px;
+  border-radius: 1rem; /* mírně zaoblené kraje */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.scatter-img:nth-child(odd) {
+  align-self: flex-start;
+  margin-left: 2rem;
+}
+
+.scatter-img:nth-child(even) {
+  align-self: flex-end;
+  margin-right: 2rem;
+}
+
+.scatter-img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  z-index: 10;
+}
+
+.scatter-img {
+  width: 240px;
+  border-radius: 1rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+@media (min-width: 768px) {
+  .scatter-img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    z-index: 10;
+  }
+}

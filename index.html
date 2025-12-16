@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
   <title>Igor Vujovič</title>
 
   <!-- Tailwind CDN -->
@@ -43,13 +44,44 @@
 
   <main class="max-w-5xl mx-auto px-6 py-24 space-y-24">
 
-    <section>
-      <h2 class="text-3xl font-semibold">O mně</h2>
-      <p class="mt-4 text-neutral-400 max-w-2xl">
-        Učím informatiku. Zaměřuji se na praktické dovednosti, weby,
-        GNU/Linux a algoritmizaci.
+  <section>
+    <h2 class="text-3xl font-semibold mb-8">O mně</h2>
+
+
+    <!-- První řádek: obrázek vlevo + text vpravo -->
+    <div class="flex flex-col md:flex-row items-center gap-6">
+      <img src="resources/img/1.jpg" class="scatter-img" />
+      <p class="text-neutral-400 text-center md:text-left md:flex-1 md:pl-6">
+        Text1.
       </p>
-    </section>
+    </div>
+
+    <!-- Druhý řádek: obrázek vpravo + text vlevo -->
+    <div class="flex flex-col md:flex-row-reverse items-center gap-6">
+      <img src="resources/img/2.jpg" class="scatter-img" />
+      <p class="text-neutral-400 text-center md:text-right md:flex-1">
+        Text2.
+      </p>
+    </div>
+
+    <!-- Třetí řádek: vlevo -->
+    <div class="flex flex-col md:flex-row items-center gap-6">
+      <img src="resources/img/3.jpg" class="scatter-img" />
+      <p class="text-neutral-400 text-center md:text-left md:flex-1 md:pl-6">
+        Text3.
+      </p>
+    </div>
+
+    <!-- Čtvrtý řádek: vpravo -->
+    <div class="flex flex-col md:flex-row-reverse items-center gap-6">
+      <img src="resources/img/4.jpg" class="scatter-img" />
+      <p class="text-neutral-400 text-center md:text-right md:flex-1">
+        Text4.
+      </p>
+    </div>
+
+</section>
+
 
     <section>
       <h2 class="text-3xl font-semibold">Co učím</h2>

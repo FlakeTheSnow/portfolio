@@ -5,6 +5,7 @@
 ```
 /portfolio
  ├─ index.html
+ ├─ style.css
  └─ /resources 
     ├─ particles*.js
     ├─ donut.js
