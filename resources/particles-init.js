@@ -7,7 +7,7 @@ particlesJS('particles-js', {
   particles: {
     number: {
       value: 60,
-      density: { enable: true, value_area: 800 }
+      density: { enable: true, value_area: 400 }
     },
     color: { value: '#38bdf8' },
     shape: { type: 'circle' },
@@ -24,8 +24,15 @@ particlesJS('particles-js', {
   },
   interactivity: {
     events: {
-      onhover: { enable: true, mode: 'repulse' },
-      resize: true
+      onclick: { enable: true, mode: 'push', distance: 80 },
+      onhover: { enable: true, mode: 'repulse', distance: 80 },
+      resize: true,
+      
+    },
+    "modes":{
+      "repulse":{
+                "distance":87.90646751856022,
+      }
     }
   },
   retina_detect: true

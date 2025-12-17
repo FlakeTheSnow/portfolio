@@ -9,6 +9,7 @@ if(storedTheme === 'light') setLight();
 toggle.addEventListener('click', () => {
   const isLight = root.classList.contains('light');
   isLight ? setDark() : setLight();
+
 });
 
 function setLight() {
