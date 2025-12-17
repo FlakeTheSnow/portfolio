@@ -33,89 +33,166 @@
   <!-- CONTENT -->
 
   <!-- THEME TOGGLE -->
-    <button id="theme-toggle" aria-label="Přepnout motiv" 
-    class="fixed top-6 right-6 z-50 flex items-center gap-2 rounded-full bg-neutral-800 px-4 py-2 shadow-lg ">
+  <button id="theme-toggle" aria-label="Přepnout motiv" 
+  class="fixed top-6 right-6 z-50 flex items-center gap-2 rounded-full bg-neutral-800 px-4 py-2 shadow-lg ">
     <span id="icon-sun" class="text-yellow-400">🌙</span>
     <div class="relative w-10 h-5 bg-neut🌙ral-600 rounded-full bg-neutral-600">
-    <div id="toggle-dot" class="absolute top-0.5 left-0.5 w-4 h-4 bg-white rounded-full transition-transform"></div>
+      <div id="toggle-dot" class="absolute top-0.5 left-0.5 w-4 h-4 bg-white rounded-full transition-transform"></div>
     </div>
     <span id="icon-moon" class="text-blue-300">💡</span>
-    </button>
+  </button>
 
   <main class="max-w-5xl mx-auto px-6 py-24 space-y-24">
 
   <section>
     <h2 class="text-3xl font-semibold mb-8">O mně</h2>
 
-
-    <!-- První řádek: obrázek vlevo + text vpravo -->
     <div class="flex flex-col md:flex-row items-center gap-6">
       <img src="resources/img/1.jpg" class="scatter-img" />
       <p class="text-neutral-400 text-center md:text-left md:flex-1 md:pl-6">
-        Text1.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reprehenderit atque libero praesentium eum facere doloribus ad harum officiis! Aliquid a exercitationem architecto eveniet nihil obcaecati quis consequuntur. Velit, sequi.
       </p>
     </div>
 
-    <!-- Druhý řádek: obrázek vpravo + text vlevo -->
     <div class="flex flex-col md:flex-row-reverse items-center gap-6">
       <img src="resources/img/2.jpg" class="scatter-img" />
       <p class="text-neutral-400 text-center md:text-right md:flex-1">
-        Text2.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem magnam quae eos. Maxime laudantium recusandae voluptate officiis similique aut magnam sequi veniam dolor quis architecto, velit doloribus ad. Neque, tenetur!
       </p>
     </div>
 
-    <!-- Třetí řádek: vlevo -->
     <div class="flex flex-col md:flex-row items-center gap-6">
       <img src="resources/img/3.jpg" class="scatter-img" />
       <p class="text-neutral-400 text-center md:text-left md:flex-1 md:pl-6">
-        Text3.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat possimus facilis odit fugit eveniet voluptate nobis illum earum? Blanditiis quos ullam doloremque, modi iste illum facere enim consequatur autem consequuntur.
       </p>
     </div>
 
-    <!-- Čtvrtý řádek: vpravo -->
     <div class="flex flex-col md:flex-row-reverse items-center gap-6">
       <img src="resources/img/4.jpg" class="scatter-img" />
       <p class="text-neutral-400 text-center md:text-right md:flex-1">
-        Text4.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed laboriosam numquam hic atque voluptate magnam laborum natus velit assumenda dolores, aspernatur incidunt reprehenderit non dicta excepturi, expedita maiores praesentium. Qui!
       </p>
     </div>
+  </section>
 
-</section>
 
+  <section class="max-w-5xl mx-auto mt-12 px-6">
+    <h2 class="text-3xl font-semibold mb-8 md:text-right">Co učím</h2>
 
-    <section>
-      <h2 class="text-3xl font-semibold">Co učím</h2>
-      <ul class="mt-4 space-y-2 text-neutral-400">
-        <li>Základy programování</li>
-        <li>Weby</li>
-        <li>Sítě</li>
-        <li>Linux</li>
-      </ul>
-    </section>
-
-    <footer class="relative mt-32 py-24 overflow-hidden">
-      <div id="particles-js" class="absolute inset-0"></div>
-
-      <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        <h2 class="text-3xl font-semibold">Kontakt</h2>
-
-        <p class="mt-6 text-neutral-400">
-          📧 <a href="mailto:email@skola.cz" class="hover:text-blue-400 transition">
-            vujovic@gjk.cz
-          </a>
-        </p>
-
-        <a href="https://github.com/FlakeTheSnow"
-          target="_blank"
-          class="mt-6 inline-flex items-center gap-2 text-neutral-400 hover:text-blue-400 transition">
-          <!-- GitHub logo (SVG) -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.54-3.87-1.54-.52-1.32-1.28-1.67-1.28-1.67-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.3-5.26-1.28-5.26-5.7 0-1.26.45-2.3 1.2-3.1-.12-.3-.52-1.5.1-3.12 0 0 .98-.32 3.2 1.18a11.1 11.1 0 0 1 5.82 0c2.22-1.5 3.2-1.18 3.2-1.18.62 1.62.22 2.82.1 3.12.75.8 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.28 5.7.42.36.8 1.08.8 2.18v3.24c0 .3.2.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/>
-          </svg>
-          GitHub
-        </a>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Karta 1 -->
+      <div class="w-full h-40 perspective">
+        <div class="relative w-full h-full transition-transform duration-500 transform-style-preserve-3d hover:rotate-y-180">
+          <div class="absolute w-full h-full bg-blue-600 rounded-xl flex items-center justify-center backface-hidden">
+            <span class="text-3xl">💻</span>
+          </div>
+          <div class="absolute w-full h-full bg-neutral-800 rounded-xl flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 p-4">
+            <h3 class="text-xl font-semibold mb-2 text-white">Základy programování</h3>
+            <p class="text-neutral-400 text-sm">Úvod do algoritmů a proměnných
+              (Python)
+            </p>
+          </div>
+        </div>
       </div>
-    </footer>
+
+      <!-- Karta 2 -->
+      <div class="w-full h-40 perspective">
+        <div class="relative w-full h-full transition-transform duration-500 transform-style-preserve-3d hover:rotate-y-180">
+          <div class="absolute w-full h-full bg-green-600 rounded-xl flex items-center justify-center backface-hidden">
+            <span class="text-3xl">🌐</span>
+          </div>
+          <div class="absolute w-full h-full bg-neutral-800 rounded-xl flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 p-4">
+            <h3 class="text-xl font-semibold mb-2 text-white">Weby</h3>
+            <p class="text-neutral-400 text-sm">HTML, CSS, JavaScript</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Karta 3 -->
+      <div class="w-full h-40 perspective">
+        <div class="relative w-full h-full transition-transform duration-500 transform-style-preserve-3d hover:rotate-y-180">
+          <div class="absolute w-full h-full bg-purple-600 rounded-xl flex items-center justify-center backface-hidden">
+            <span class="text-3xl">🖧</span>
+          </div>
+          <div class="absolute w-full h-full bg-neutral-800 rounded-xl flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 p-4">
+            <h3 class="text-xl font-semibold mb-2 text-white">Sítě</h3>
+            <p class="text-neutral-400 text-sm">OSI/ISO, Směrování, DNS</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Karta 4 -->
+      <div class="w-full h-40 perspective">
+        <div class="relative w-full h-full transition-transform duration-500 transform-style-preserve-3d hover:rotate-y-180">
+          <div class="absolute w-full h-full bg-yellow-600 rounded-xl flex items-center justify-center backface-hidden">
+            <span class="text-3xl">🐧</span>
+          </div>
+          <div class="absolute w-full h-full bg-neutral-800 rounded-xl flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 p-4">
+            <h3 class="text-xl font-semibold mb-2 text-white">GNU/Linux</h3>
+            <p class="text-neutral-400 text-sm">Práce s terminálem, správa systému</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Karta 5 -->
+      <div class="w-full h-40 perspective">
+        <div class="relative w-full h-full transition-transform duration-500 transform-style-preserve-3d hover:rotate-y-180">
+          <div class="absolute w-full h-full bg-red-600 rounded-xl flex items-center justify-center backface-hidden">
+            <span class="text-3xl">🤖</span>
+          </div>
+          <div class="absolute w-full h-full bg-neutral-800 rounded-xl flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 p-4">
+            <h3 class="text-xl font-semibold mb-2 text-white">Arduino</h3>
+            <p class="text-neutral-400 text-sm">Yeah !</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Karta 6 -->
+      <div class="w-full h-40 perspective">
+        <div class="relative w-full h-full transition-transform duration-500 transform-style-preserve-3d hover:rotate-y-180">
+          <div class="absolute w-full h-full bg-pink-600 rounded-xl flex items-center justify-center backface-hidden">
+            <span class="text-3xl">🛡️</span>
+          </div>
+          <div class="absolute w-full h-full bg-neutral-800 rounded-xl flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 p-4">
+            <h3 class="text-xl font-semibold mb-2 text-white">Kyberbezpečnost</h3>
+            <p class="text-neutral-400 text-sm"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section>
+    <h2 class="text-3xl font-semibold md:text-center">Materiály: Python a weby</h2>
+  </section>
+
+
+  <footer class="relative mt-32 py-24 overflow-hidden">
+    <div id="particles-js" class="absolute inset-0"></div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-semibold">Kontakt</h2>
+
+      <p class="mt-6 text-neutral-400">
+        📧 <a href="mailto:email@skola.cz" class="hover:text-blue-400 transition">
+          vujovic@gjk.cz
+        </a>
+      </p>
+
+      <a href="https://github.com/FlakeTheSnow"
+        target="_blank"
+        class="mt-6 inline-flex items-center gap-2 text-neutral-400 hover:text-blue-400 transition">
+        <!-- GitHub logo (SVG) -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.54-3.87-1.54-.52-1.32-1.28-1.67-1.28-1.67-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.3-5.26-1.28-5.26-5.7 0-1.26.45-2.3 1.2-3.1-.12-.3-.52-1.5.1-3.12 0 0 .98-.32 3.2 1.18a11.1 11.1 0 0 1 5.82 0c2.22-1.5 3.2-1.18 3.2-1.18.62 1.62.22 2.82.1 3.12.75.8 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.28 5.7.42.36.8 1.08.8 2.18v3.24c0 .3.2.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/>
+        </svg>
+        GitHub
+      </a>
+    </div>
+  </footer>
 
 
   </main>
